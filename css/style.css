@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #212121;
+}
+
+a {
+  text-underline-position: under;
+}
+
+input[type=text],
+input[type=password] {
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.signup_container {
+  width: 500px;
+  min-height: 500px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.signin_container {
+  width: 950px;
+  min-height: 100vh;
+  margin: 50px auto;
+}
+
+button[type=submit] {
+  width: 100%;
+  height: 60px;
+  border: 0;
+  box-shadow: 0;
+  cursor: pointer;
+  margin: 20px 0 10px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.form_float {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.form_float label {
+  position: absolute;
+  transition: all 0.3s;
+  top: 20px;
+  left: 20px;
+}
+.form_float input[type=text],
+.form_float input[type=password] {
+  border: 0;
+  width: 100%;
+  padding: 0 20px;
+  height: 60px;
+  background: transparent;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.form_float input[type=text]::-moz-placeholder, .form_float input[type=password]::-moz-placeholder {
+  color: transparent;
+}
+.form_float input[type=text]::placeholder,
+.form_float input[type=password]::placeholder {
+  color: transparent;
+}
+.form_float input[type=text]:not(:-moz-placeholder-shown) ~ label, .form_float input[type=password]:not(:-moz-placeholder-shown) ~ label {
+  font-size: 13px;
+  color: #333;
+  top: 3px;
+  left: 13px;
+}
+.form_float input[type=text]:focus ~ label, .form_float input[type=text]:not(:placeholder-shown) ~ label,
+.form_float input[type=password]:focus ~ label,
+.form_float input[type=password]:not(:placeholder-shown) ~ label {
+  font-size: 13px;
+  color: #333;
+  top: 3px;
+  left: 13px;
+}
