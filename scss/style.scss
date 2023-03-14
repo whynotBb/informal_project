@@ -13,6 +13,9 @@ input[type="password"] {
   height: 35px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  &:focus {
+    outline: none;
+  }
 }
 .signup_container {
   width: 500px;
@@ -25,9 +28,13 @@ input[type="password"] {
   padding: 30px;
 }
 .signin_container {
-  width: 950px;
+  width: 750px;
   min-height: 100vh;
   margin: 50px auto;
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 button[type="submit"] {
   width: 100%;
@@ -73,5 +80,32 @@ button[type="submit"] {
         left: 13px;
       }
     }
+  }
+  .in_btn {
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #61876e;
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #61876e;
+      color: #f2f2f2;
+    }
+  }
+  .timer {
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    height: 60px;
+    line-height: 60px;
+    color: #4c8660;
+    letter-spacing: 1px;
   }
 }
