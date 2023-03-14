@@ -93,7 +93,7 @@ button[type="submit"] {
     line-height: 40px;
     border-radius: 6px;
     background-color: #fff;
-    transition: all 0.3s;
+    transition: all 0.2s;
     &:hover {
       background-color: #61876e;
       color: #f2f2f2;
@@ -107,5 +107,13 @@ button[type="submit"] {
     line-height: 60px;
     color: #4c8660;
     letter-spacing: 1px;
+  }
+}
+.form_wrap {
+  height: 70px;
+  overflow: hidden;
+  transition: all 0.2s;
+  &.active {
+    height: 140px;
   }
 }

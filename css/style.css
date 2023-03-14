@@ -109,7 +109,7 @@ button[type=submit] {
   line-height: 40px;
   border-radius: 6px;
   background-color: #fff;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .form_float .in_btn:hover {
   background-color: #61876e;
@@ -123,4 +123,13 @@ button[type=submit] {
   line-height: 60px;
   color: #4c8660;
   letter-spacing: 1px;
+}
+
+.form_wrap {
+  height: 70px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.form_wrap.active {
+  height: 140px;
 }
